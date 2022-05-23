@@ -65,28 +65,28 @@
 # Create an bankFees() method to apply the bank fees with a percentage of 5% of the balance account.
 # Create a display() method to display account details.
 
-class BankAccount: 
-    def __init__(self,accountNumber, name, balance):
-        self.accountNumber = accountNumber
-        self.name = name
-        self.balance = balance
-    def Deposit(self , d ):
-        self.balance = self.balance + d
-        print("Success")
-    def Withdrawal(self , w):
-        if(self.balance < w):
-            print("Insufficient balance !")
-        else:
-            self.balance = self.balance - w
-            print("Success")
-    def bankFees(self):
-        self.balance = (95/100)*self.balance
-        print("Success")
-    def display(self):
-        print("Account Number : " , self.accountNumber)
-        print("Account Name : " , self.name)
-        print("Account Balance : " , self.balance , " $")
-Account = BankAccount(777, "Anri Hayrapetyan" , 100)
-Account.Withdrawal(100)
-Account.Deposit(2000)
-Account.display()
+# class BankAccount: 
+#     def __init__(self,accountNumber, name, balance):
+#         self.accountNumber = accountNumber
+#         self.name = name
+#         self.balance = balance
+#     def Deposit(self , d ):
+#         self.balance = self.balance + d
+#         print("Success")
+#     def Withdrawal(self , w):
+#         if(self.balance < w):
+#             print("Insufficient balance !")
+#         else:
+#             self.balance = self.balance - w
+#             print("Success")
+#     def bankFees(self):
+#         self.balance = (95/100)*self.balance
+#         print("Success")
+#     def display(self):
+#         print("Account Number : " , self.accountNumber)
+#         print("Account Name : " , self.name)
+#         print("Account Balance : " , self.balance , " $")
+# Account = BankAccount(777, "Anri Hayrapetyan" , 100)
+# Account.Withdrawal(100)
+# Account.Deposit(2000)
+# Account.display()
